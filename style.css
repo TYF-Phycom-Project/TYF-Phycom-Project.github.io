@@ -27,16 +27,6 @@
     font-size: 2em;
 }
 
-.text-align-1{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #FFF;
-    font-family: "Baloo Bhai 2";
-    font-style: normal;
-    font-size: 0.5em;
-}
-
 .button-group {
     display: flex;
     
@@ -90,19 +80,42 @@
     background: white;
 }
 
+.text-align-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFF;
+    font-family: "Baloo Bhai 2";
+    font-style: normal;
+    font-size: 0.5em;
+}
+
+a{
+    color: #FFF;
+    text-decoration: none;
+}
+a:hover{
+    color: #48AB94;
+}
+
 .container2{
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     width: 100%;
-    height: 45em; 
+    height: 30em; 
     background: white;
+    gap: 22%;
+}
+
+.txt-tainer-1{
+    padding-left: 10%;
 }
 
 .text-a1{
     color: #35674F;
-    text-align: center;
+    text-align: left;
     font-family: "Baloo Bhai 2";
     font-size: 2em;
     font-weight: 1000;
@@ -116,6 +129,14 @@
     padding-bottom: 2%;
 }
 
+.setting-1a{
+    width: 15em;
+    height: 15em;
+    border-radius: 0.1em;
+    background: #cbcbcb;
+    padding-left: 5%;
+}
+
 .sepline-a{
     width: 100%;
     height: 0.1em; 
@@ -126,7 +147,6 @@
 .container2-b{
     width: 100%;
     height: 10em; 
-    background: url(pic/seppage.png) no-repeat center;
     background-size: cover;
 }
 .sep{
@@ -235,15 +255,6 @@
     justify-content: left;
     width: 60%;
     background-color: #fff;
-}
-
-.container2-3-1{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 30em; 
-    background: white;
 }
 
 
