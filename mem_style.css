@@ -233,10 +233,6 @@ a:hover{
 }
 
 .s-box{
-    text-align: center;
-    position: relative;
-    display: flex;
-    justify-content: center;
     width: 24%;
     height: 27em;
     border-radius: 10px;
@@ -245,10 +241,50 @@ a:hover{
     box-shadow: 0 50px 50px 0 #E0E6DB;
 }
 
-.per-name{
-    color: #30263D;
-    font-family: "Baloo Bhai 2";
+.info-person{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    height: 70%;
+    text-align: center;
 
+}
+
+.per-pic-1{
+
+    height: 90%;
+    width: 80%;
+    border-radius: 10px;
+    background-color: #48AB94;
+}
+
+.per-pic-2{
+
+    height: 90%;
+    width: 80%;
+    border-radius: 10px;
+    background-color: #48AB94;
+}
+
+.per-pic-3{
+
+    height: 90%;
+    width: 80%;
+    border-radius: 10px;
+    background-color: #48AB94;
+}
+
+
+.name{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #32293d;
+    font-family: "Kanit";
+    font-size: 1.2em;
+    font-weight: 1000;
 }
 
 .container2-3{

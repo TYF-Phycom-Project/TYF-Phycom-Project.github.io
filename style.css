@@ -104,9 +104,19 @@ a:hover{
     justify-content: left;
     align-items: center;
     width: 100%;
-    height: 30em; 
+    height: 20em; 
     background: white;
-    gap: 22%;
+    gap: 10%;
+}
+.container22{
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: 20em; 
+    background: white;
+    gap: 15%;
 }
 
 .txt-tainer-1{
@@ -123,9 +133,9 @@ a:hover{
 
 .text-a2{
     color: #384B42;
-    text-align: center;
+    text-align: left;
     font-family: "Baloo Bhai 2";
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding-bottom: 2%;
 }
 
@@ -134,7 +144,7 @@ a:hover{
     height: 15em;
     border-radius: 0.1em;
     background: #cbcbcb;
-    padding-left: 5%;
+    
 }
 
 .sepline-a{
@@ -183,7 +193,7 @@ a:hover{
 
 .container2-1{
     width: 100%;
-    height: 19em; 
+    height: 12em; 
     background: white;
 }
 
@@ -246,7 +256,7 @@ a:hover{
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 50em; 
+    height: 40em; 
     background: white;
 }
 .setting-box{
@@ -295,8 +305,49 @@ a:hover{
     width: 25%;
     height: 10em;
     border-radius: 0.1em;
-    border: 5px solid rgba(81, 101, 91, 0.42);
     background: #FFF;
+}
+
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    height: 70%;
+    text-align: center;
+
+}
+
+.pic-1{
+    height: 120%;
+    width: 120%;
+    border-radius: 10px;
+    margin-top: -10%;
+}
+.pic-2{
+    height: 90%;
+    width: 60%;
+    border-radius: 10px;
+    margin-top: -10%;
+    margin-left: 3%;
+}
+.pic-3{
+    height: 100%;
+    width: 80%;
+    border-radius: 10px;
+    margin-top: -10%;
+}
+
+.name{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #32293d;
+    font-family: "Baloo Bhai 2";
+    font-size: 1em;
+    font-weight: 1000;
 }
 
 .container2-4{
@@ -346,4 +397,29 @@ a:hover{
     
     color: #ACACAC;
     font-family: "Baloo Bhai 2";
+}
+
+.container2-3-1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 40em; 
+    background: white;
+}
+
+.pic-tainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    width: 100%;
+    height: 50em;
+}
+
+.pic{
+    width: 50%;
+    height: 40%; 
+    background: #48AB94;
+
 }
