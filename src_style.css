@@ -256,9 +256,15 @@ a:hover{
 }
 
 .pic-1{
-    height: 120%;
+    height: 130%;
     width: 120%;
-    background-color: #384B42;
+    border-radius: 10px;
+    margin-top: -10%;
+}
+
+.pic-1-1{
+    height: 150%;
+    width: 120%;
     border-radius: 10px;
     margin-top: -10%;
 }
