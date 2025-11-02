@@ -166,7 +166,7 @@
         <div class="code-section">
             <div class="code-header">Code</div>
             <pre><code class="language-cpp">
-        #include <LiquidCrystal_I2C.h>
+        #include &lt;LiquidCrystal_I2C.h&gt;
 
         //LCD variables
         LiquidCrystal_I2C lcd(0x27, 16, 2);
@@ -263,7 +263,7 @@
         int water_level = analogRead(waterSensor);//Read water sensor value
         Serial.println((water_level/100) * 100);
 
-        if((water_level/100) * 100 < min_level){//check if current water level below the minimum level
+        if((water_level/100) * 100 &lt; min_level){//check if current water level below the minimum level
             digitalWrite(waterPump_Relay, LOW);//Turn on the water pump
             water_status = 1;
         }
