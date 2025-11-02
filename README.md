@@ -10,7 +10,7 @@ Project Hydroponic farm. For Physical-Computing, IT KMITL. Year 2, semester 1/20
 ### [link](https://github.com/TYF-Phycom-Project/Project-HydroLink)
 
 ## <ins>Video Presentation</ins>
-### [link Youtube]((https://youtu.be/YN7TBfM2dpk?si=McInHrA9hJwhLSuj)
+### [link Youtube](https://youtu.be/YN7TBfM2dpk?si=McInHrA9hJwhLSuj)
 
 ## <ins>Poster</ins>
 ### [link](https://drive.google.com/file/d/1JyX3aaq6gQDRB--r-edpkePAhie65P2l/view?usp=sharing)
