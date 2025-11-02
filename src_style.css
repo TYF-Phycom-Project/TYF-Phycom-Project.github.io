@@ -379,3 +379,22 @@ a:hover{
     color: #ACACAC;
     font-family: "Baloo Bhai 2";
 }
+
+.code-section {
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+    padding: 20px;
+    margin: 40px auto;
+    border-radius: 8px;
+    width: 90%;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.code-header {
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    color: #00e0ff;
+    margin-bottom: 10px;
+}

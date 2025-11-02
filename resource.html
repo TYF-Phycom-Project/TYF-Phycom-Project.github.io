@@ -162,6 +162,86 @@
             </div>
         </div>
 
+        <!-- Code Display Section -->
+        <div class="code-section">
+            <div class="code-header">Code</div>
+            <pre><code class="language-cpp">
+        // LCD + Light & Water Control
+        #include &lt;LiquidCrystal_I2C.h&gt;
+
+        LiquidCrystal_I2C lcd(0x27, 16, 2);
+
+        byte light_c[8] = {
+        B00000, B01110, B11111, B11111,
+        B01110, B00100, B01110, B00000
+        };
+
+        byte water_c[8] = {
+        B00000, B00100, B00100, B01110,
+        B11111, B01110, B00100, B00000
+        };
+
+        int light_status = 0, water_status = 0;
+        const int light = 3, light2 = 4, light_button = 2;
+        int led_state = LOW, last_button_state = HIGH, button_state = HIGH;
+        unsigned long last_debounce_time = 0, debounce_delay = 50;
+
+        const int waterSensor = A0, waterPump_Relay = 5;
+        int water_level = 0, min_level = 300;
+
+        void setup() {
+        Serial.begin(9600);
+        pinMode(waterSensor, INPUT);
+        pinMode(light_button, INPUT_PULLUP);
+        pinMode(light, OUTPUT); pinMode(light2, OUTPUT);
+        pinMode(waterPump_Relay, OUTPUT);
+        lcd.init(); lcd.backlight(); lcd.clear();
+        }
+
+        void loop() {
+        int button_read = digitalRead(light_button);
+        if (button_read != last_button_state) last_debounce_time = millis();
+        if ((millis() - last_debounce_time) > debounce_delay) {
+            if (button_read != button_state) {
+            button_state = button_read;
+            if (button_state == LOW) {
+                led_state = !led_state;
+                digitalWrite(light, led_state);
+                digitalWrite(light2, led_state);
+                light_status = led_state ? 1 : 0;
+            }
+            }
+        }
+        last_button_state = button_read;
+
+        water_level = analogRead(waterSensor);
+        Serial.println((water_level / 100) * 100);
+        if ((water_level / 100) * 100 < min_level) {
+            digitalWrite(waterPump_Relay, LOW);
+            water_status = 1;
+        } else {
+            digitalWrite(waterPump_Relay, HIGH);
+            water_status = 0;
+        }
+
+        LCD_command(light_status, water_status);
+        }
+
+        void LCD_command(int light_status, int water_status) {
+        lcd.createChar(1, water_c);
+        lcd.setCursor(0, 0); lcd.write(byte(1));
+        lcd.setCursor(2, 0);
+        lcd.print(water_status == 0 ? "WATER: FILLED" : "WATER: REFILL...");
+
+        lcd.createChar(2, light_c);
+        lcd.setCursor(0, 1); lcd.write(byte(2));
+        lcd.setCursor(2, 1);
+        lcd.print(light_status == 0 ? "LIGHT: OFF." : "LIGHT: ON. ");
+        }
+            </code></pre>
+        </div>
+
+
         <!--down page -->
         <div class="down-page">
             <div class="container2-4">
